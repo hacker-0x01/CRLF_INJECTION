@@ -2,6 +2,9 @@
 _______________________________
 
 %0Aset-cookie:%20hello=l4gtr4;
+%0d%0a%09l4gtr4:%20headervalue
+%0D%0ASet-Cookie:hellol4gtr4;
+%0d%0aSet-Cookie:%20csrf_id=l4gtr4%3b
 %%0a0aSet-Cookie:crlf=l4gtr4
 %0aSet-Cookie:crlf=l4gtr4
 %0d%0aSet-Cookie:crlf=l4gtr4
