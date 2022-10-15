@@ -5,7 +5,7 @@
 
 ✅Description: MASS CRLF SCANNER
 
-✅Version: Ultra
+✅Version: 1.1
 
 ✅Software: OpenBullet, SilverBullet
 
