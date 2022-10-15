@@ -15,6 +15,9 @@
 
 ✅Support: yes
 
+🛒Ultra Version: greyhathackers.sellpass.io/product/sypQVwtCJCW9
+🎁$1 Coupon: the0546tnkh
+
 👾try free config: https://t.me/GreyH4tHackers/684
 
 👾Ultra Config preview: https://t.me/GreyH4tHackers/745
